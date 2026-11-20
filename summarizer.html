@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - Notes Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="summarizer-page">
+
+    <div class="summarizer-container">
+        <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+
+        <h1> Notes Summarizer</h1>
+        <p>Paste your study notes and create a short summary.</p>
+
+        <textarea id="notesInput"
+            placeholder="Paste your notes here..."></textarea>
+
+        <button onclick="summarizeNotes()">Generate Summary</button>
+        <button class="clear-button" onclick="clearNotes()">Clear</button>
+
+        <div class="summary-result">
+            <h2>Your Summary</h2>
+            <p id="summaryOutput">Your summary will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

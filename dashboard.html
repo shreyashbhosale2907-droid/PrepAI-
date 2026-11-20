@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <h2 class="logo">Prep<span>AI.</span></h2>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <a class="side-link active" href="dashboard.html">Dashboard</a>
+        <a class="side-link" href="quiz.html">AI Quiz</a>
+        <a class="side-link" href="flashcards.html">Flashcards</a>
+        <a class="side-link" href="summarizer.html">Summarizer</a>
+        <a class="side-link" href="planner.html">Study Planner</a>
+
+        <div class="sidebar-bottom">
+            <a class="side-link logout" href="index.html">Logout</a>
+        </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div>
+                <p class="dashboard-eyebrow">STUDENT WORKSPACE</p>
+                <h1>Welcome back, Student!</h1>
+                <p>Ready to make today productive?</p>
+            </div>
+        </header>
+
+        <section class="welcome-banner">
+            <div>
+                <span class="banner-label">
+                    Your Personal Learning Space
+                </span>
+
+                <h2>Learn smarter with PrepAI.</h2>
+
+                <p>
+                    Practice, revise, summarize and organize
+                    your studies in one place.
+                </p>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Your Overview</h2>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h2 id="moduleCount">4</h2>
+                    <p>Available Tools</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="totalTasks">0</h2>
+                    <p>Total Study Tasks</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="completedTasks">0</h2>
+                    <p>Tasks Completed</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="completionRate">0%</h2>
+                    <p>Task Completion</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2 class="section-heading">Your Study Progress</h2>
+
+            <div class="progress-card">
+
+                <div class="progress-heading">
+                    <div>
+                        <h3>Task Completion</h3>
+                        <p>
+                            Keep completing your planned study tasks.
+                        </p>
+                    </div>
+
+                    <strong id="progressText">0%</strong>
+                </div>
+
+                <div class="progress-track">
+                    <div
+                        class="progress-fill"
+                        id="progressBar">
+                    </div>
+                </div>
+
+                <p class="progress-message" id="progressMessage">
+                    Add your first task in the Study Planner to begin!
+                </p>
+
+            </div>
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>
+                © 2026 PrepAI | AI-Powered Exam Preparation Portal
+            </p>
+
+            <p>Learn | Practice | Achieve</p>
+        </footer>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

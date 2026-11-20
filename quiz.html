@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - AI Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+<div class="quiz-wrapper">
+
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+
+    <div class="quiz-heading">
+        <p class="tagline"> SMART LEARNING WITH AI</p>
+        <h1>AI Quiz <span>Generator</span></h1>
+        <p>Create a quiz and test your knowledge.</p>
+    </div>
+
+    <div class="quiz-setup" id="quizSetup">
+        <h2>Customize Your Quiz</h2>
+
+        <label>Choose Subject</label>
+        <select id="subject">
+            <option value="Python">Python Programming</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Science">Science</option>
+        </select>
+
+        <label>Enter Topic</label>
+        <input type="text" id="topic"
+            placeholder="Example: Loops, Algebra, Physics">
+
+        <label>Select Difficulty</label>
+        <select id="difficulty">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+
+        <button class="primary-btn generate-btn"
+            onclick="generateQuiz()">
+            Generate Quiz →
+        </button>
+    </div>
+
+    <div class="quiz-area" id="quizArea" style="display:none">
+        <div class="quiz-top">
+            <span id="quizSubject"></span>
+            <span id="questionCount"></span>
+        </div>
+
+        <div class="progress-bar quiz-progress">
+            <div class="progress-fill" id="quizProgress"></div>
+        </div>
+
+        <div id="questionContainer"></div>
+
+        <button class="primary-btn generate-btn"
+            id="nextButton" onclick="nextQuestion()">
+            Next Question →
+        </button>
+    </div>
+
+    <div class="result-area" id="resultArea" style="display:none">
+        <div class="result-icon">🏆</div>
+        <h2>Quiz Completed!</h2>
+        <p>Your final score</p>
+        <h1 id="finalScore">0/0</h1>
+        <p id="resultMessage"></p>
+
+        <button class="primary-btn"
+            onclick="location.reload()">
+            Try Again
+        </button>
+        <a href="dashboard.html" class="back-link">
+            Back to Dashboard
+        </a>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<div class="flashcard-page">
+
+    <a href="dashboard.html" class="back-link">
+        ← Back to Dashboard
+    </a>
+
+    <div class="flashcard-heading">
+        <h1>Smart <span>Flashcards</span></h1>
+        <p>Learn important concepts easily.</p>
+    </div>
+
+    <div class="flashcard" id="flashcard">
+        <p id="card-label">QUESTION</p>
+        <h2 id="card-text">What is HTML?</h2>
+    </div>
+
+    <button class="primary-btn show-answer"
+        onclick="flipCard()"> 
+        Show Answer
+    </button>
+
+    <div class="card-navigation">
+        <button onclick="previousCard()">← Previous</button>
+        <span id="card-number">1 / 5</span>
+        <button onclick="nextCard()">Next →</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

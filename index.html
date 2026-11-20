@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepAI - Smart Exam Preparation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Prep<span>AI</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+
+        <button class="login-btn" onclick="startLearning()">
+            Get Started
+        </button>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">YOUR SMART AI STUDY PARTNER</p>
+
+        <h1>
+            Study Smarter.<br>
+            Score <span>Higher.</span>
+        </h1>
+
+        <p class="description">
+            Prepare for exams with AI-powered quizzes,
+            smart flashcards, instant summaries and
+            personalized study plans.
+        </p>
+
+        <button class="primary-btn" onclick="startLearning()">
+            Start Learning →
+        </button>
+
+        <p class="small-text">
+            Your journey to better learning starts here.
+        </p>
+    </div>
+
+    <div class="hero-card">
+        <div class="card-top">
+            <h3>Your Study Dashboard</h3>
+        </div>
+        <div class="progress-box">
+            <p>Weekly Progress</p>
+
+            <h2 id="progressText">0%</h2>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+
+            <p id="progressMessage">
+                Add your first task in the study Planner to begin!
+            </p>
+        </div>
+
+        <div class="dashboard-items">
+            <div>
+                <b>AI Quizzes</b>
+                <span>Practice</span>
+            </div>
+            <div>
+                <b>Flashcards</b>
+                <span>Remember</span>
+            </div>
+            <div>
+                <b>Smart Notes</b>
+                <span>Understand</span>
+            </div>
+            <div>
+                <b>Study Plan</b>
+                <span>Organize</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <h2>Everything You Need to <span>Excel</span></h2>
+    <p class="section-description">
+        Powerful AI tools to make your exam preparation easier.
+    </p>
+
+    <div class="feature-container">
+        <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>AI Quiz Generator</h3>
+            <p>
+                Generate smart quizzes based on your subjects and topics.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Smart Flashcards</h3>
+            <p>
+                Remember important concepts through interactive flashcards.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>AI Summarizer</h3>
+            <p>
+                Convert lengthy notes into short and easy summaries.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Study Planner</h3>
+            <p>
+                Create personalized daily study schedules.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer id="about">  
+    <h2>PrepAI</h2>
+    <p>Learn smarter. Prepare better. Achieve more.</p>
+    <p>© 2026 PrepAI. </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
